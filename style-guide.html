@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Style Guide / Rebecca Lu</title>
+        
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        
+        <!--linking favicons | https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        
+        <!-- 
+            FONTS USED:
+
+            Roboto Mono | https://fonts.google.com/specimen/Roboto+Mono
+
+            Inter | https://fonts.google.com/specimen/Inter
+        -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        <!--header start-->
+        <header class="box" id="sidebar">
+            <a href="index.html">
+                <h1 id="logo">Rebecca Lu</h1>
+                <span id="logo-label">visual designer + digital illustrator</span>
+            </a>
+
+            <nav class="sidebar-content">
+                <a href="index.html">back to portfolio</a>
+                <a class="sidebar-active" href="style-guide.html">style guide</a>
+                <a href="references.html">references</a>
+            </nav>
+        </header>
+        <!--header end-->
+
+        <!--main content start-->
+        <div class="box">
+            <div class="box-content" id="style-guide">
+                <!-- INTERACTIVE ELEMENTS ---------------------->
+                <section>
+                    <h1>Navigation Button</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>nav>a</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;nav&gt;<br>
+                            &lt;a href="#"&gt;featured projects&lt;/a&gt;<br>
+                        &lt;/nav&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <nav><a href="#">featured projects</a></nav>
+                </section>
+
+                <section>
+                    <h1>In-Text Links</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>.link-in-text</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;a href="#"&gt;in-text link&lt;/a&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <p><a class="link-in-text" href="#">in-text link</a></p>
+                </section>
+
+                <!-- TEXT ELEMENTS ------------------------------>
+                <section>
+                    <h1>Heading 1</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>h1</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;h1&gt;Heading One&lt;/h1&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <h1>Heading One</h1>
+                </section>
+
+                <section>
+                    <h1>Heading 2</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>h2</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;h2&gt;Heading Two&lt;/h2&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <h2>Heading Two</h2>
+                </section>
+                
+                <section>
+                    <h1>Heading 3</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>h3</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;h3&gt;Heading Three&lt;/h3&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <h3>Heading Three</h3>
+                </section>
+
+                <section>
+                    <h1>Paragraph</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>p</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+                
+                <section>
+                    <h1>Unordered List</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>ul</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;ul&gt;<br>
+                        &lt;ul&gt;List item 1&lt;/li&gt;<br>
+                        &lt;ul&gt;List item 2&lt;/li&gt;<br>
+                        &lt;ul&gt;List item 3&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <ul>
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                        <li>List item 3</li>
+                    </ul>
+                </section>
+                <!-- END OF TEXT ELEMENTS ---------------------->
+
+                <!-- COMBINED ELEMENTS ------------------------->
+                <section>
+                    <h1>Figure with Caption</h1>
+
+                    <h3>CSS Selector</h3>
+                    <p>figure</p>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;figure&gt;<br>
+                            &lt;img src="#" alt="image description"&gt;<br>
+                             &lt;figcaption&gt;Description of image.&lt;/figcaption&gt;<br>
+                        &lt;/figure&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <figure>
+                        <img src="img/caseit/caseit_moodboard.png" alt="CaseIT moodboard">
+                        <figcaption>CaseIT moodboard.</figcaption>
+                    </figure>
+                </section>
+                
+                <section>
+                    <h1>Main Navigation</h1>
+
+                    <h3>Sample Code</h3>
+                    <code>
+                        &lt;header class="box" id="sidebar"&gt;<br>
+                            &lt;h1 id="logo"&gt;Rebecca Lu&lt;/h1&gt;<br>
+                            &lt;span id="logo-label"&gt;visual designer + digital illustrator&lt;/span&gt;
+
+                            &lt;nav class="sidebar-content"&gt;<br>
+                                &lt;a href="index.html"&gt;back to portfolio&lt;/a&gt;<br>
+                                &lt;a class="nav-active" href="style-guide.html"&gt;style guide&lt;/a&gt;<br>
+                                &lt;a href="references.html"&gt;references&lt;/a&gt;<br>
+                            &lt;/nav&gt;<br>
+                        &lt;/header&gt;
+                    </code>
+
+                    <h3>Rendered Element</h3>
+                    <p>example on the left of this page.</p>
+                </section>
+
+                <section>
+                    <h1>Grid Structure</h1>
+                    
+                    <p>The grid is essentially one column for the main content, but on a desktop screen, to the left of the main content is a sidebar with major links, and to the right of the main content is a sidebar with social media links.</p>
+                    
+                    <p>When screen size is decreased, the grid is a true one-column grid where the left sidebar serves as a top header and the right sidebar becomes the footer.</p>
+                    
+                    <p>The homepage (projects page) takes the full width and height of the available screensize on desktop, having a non-scrolling effect so all content is visible, and project cards split the page horizontally in half.</p>
+                </section>
+                <!-- END OF COMBINED ELEMENTS ------------------>
+
+                <!-- COLOUR SWATCHES --------------------------->
+                <section>
+                    <h1>Colour Swatches</h1>
+                    <div class="colour-swatch" id="text">
+                        <p>body copy</p>
+                    </div>
+                    <div class="colour-swatch" id="accent">
+                        <p>links, border colour</p>
+                    </div>
+                    <div class="colour-swatch" id="context">
+                        <p>site background</p>
+                    </div>
+                    <div class="colour-swatch" id="background">
+                        <p>project list text</p>
+                    </div>
+                </section>
+            </div>
+        </div> 
+        <!--main content end-->
+        
+        <!--footer start-->
+        <footer class="box" id="social-links">
+            <!--linkedin icon | https://www.flaticon.com/free-icon/linkedin_1384088?term=linkedin&page=1&position=5-->
+            <a href="http://linkedin.com/in/becca-lu" target="_blank"><img src="img/linkedin-icon.png" alt="Rebecca's LinkedIn link"></a>
+            
+            <!--instagram icon | https://www.flaticon.com/free-icon/instagram_733614-->
+            <a href="http://instagram.com/smolflowerbunk" target="_blank"><img src="img/ig-icon.png" alt="Rebecca's Instagram link"></a>
+        </footer>
+        <!--footer end-->
+    </body>
+</html>

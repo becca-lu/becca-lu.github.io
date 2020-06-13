@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Tempo / Rebecca Lu</title>
+        
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        
+        <!--linking favicons | https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        
+        <!-- 
+            FONTS USED:
+
+            Roboto Mono | https://fonts.google.com/specimen/Roboto+Mono
+
+            Inter | https://fonts.google.com/specimen/Inter
+        -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        <!--header start-->
+        <header class="box" id="sidebar">
+            <a href="index.html">
+                <h1 id="logo">Rebecca Lu</h1>
+                <span id="logo-label">visual designer + digital illustrator</span>
+            </a>
+
+            <nav class="sidebar-content">
+                <a href="index.html">projects</a>
+                <a href="about.html">about</a>
+                <a href="files/RebeccaLu-resume2020.pdf" target="_blank">resume</a>
+                <a href="style-guide.html">style guide</a>
+            </nav>
+        </header>
+        <!--header end-->
+
+        <!--main content start-->
+        <div class="box">
+            <div class="box-content">
+                <img class="proj-header" src="img/tempo/tempo_header.png" alt="Tempo project header image">
+                <h1>Tempo</h1>
+                <h2>course project / 7 weeks</h2>
+                
+                <span class="proj-one-liner">
+                    - a mobile app for BC* Permanent Residents at the beginning of their house-seeking process to find temporary housing in lifestyle-suitable neighbourhoods
+                </span>
+                
+                <p class="subtext">
+                    *This is a hypothetical intervention designed for an academic project and is not affiliated with Canada or British Columbia's immigration services in any way.
+                </p>
+                <p class="subtext">
+                    <a href="files/tempo_final_slides.pdf" target="_blank">View Final Slide Deck (PDF)</a><br>
+                    <a href="files/tempo_final_slides.key">Download Keynote</a><br></p>
+
+                <div class="project-context">
+                    <span class="proj-context-title">Skills:</span> <span class="proj-context">User Research + Prototyping + UX/UI Design</span>
+                    <span class="proj-context-title">Team:</span> <span class="proj-context">Robyn Lai, Lucy Huang, Bonnie Chen, Tina Alidae, Cynthia Pan</span>
+                    <span class="proj-context-title">Tools:</span> <span class="proj-context">Figma + Protopie + Keynote</span>
+                </div>
+
+                <h3>00. Challenging Transitions</h3>
+                <p>Tempo was designed with the intent to ease the uncertainty that immigrants experience when searching for a new home in an unfamiliar city. It allows immigrants to explore their new home city and discover homes in neighbourhoods that suit their lifestyle needs.</p>
+
+                <h3>01. Objective</h3>
+                <p>Create an interactive digital experience that caters to a specific domain and context.</p>
+                
+                <p>I was the art director and interactive prototyper, with supporting roles in UX research and UI design. I was responsible for visually establishing trust + reliability, designing two major app features, and the content formatting of Tempo's onboarding quiz. In addition, I oversaw the development of all major workflows.</p>
+
+                <h3>02. Insights</h3>
+                <p>To start, my team and I conducted user interviews to gain insight to the experiences behind immigrating to Canada. We also conducted secondary research on existing programs, laws, and rental apps. I was responsible for looking into rental policies and laws, which can differ per city or province — ultimately helping to determine feasibility and scope.</p>
+
+                <p>The information we gathered allowed us to create our persona, Tom:</p>
+                
+                <figure>
+                    <img src="img/tempo/persona_tom.png" alt="Tom, typical user">
+                    <figcaption>Tom seeks efficiency and on-the-go accessibility.</figcaption>
+                </figure>
+                
+                <p>User journey maps helped us to better understand where Tempo could improve current frictions in the house-seeking process — particularly in the areas of discovery and search.</p>
+                
+                <figure>
+                    <img src="img/tempo/userjourney_original.png" alt="Tom's user journey without Tempo">
+                    <figcaption>Tom's user journey with the existing help available.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/tempo/userjourney_final.png" alt="Tom's user journey with Tempo">
+                    <figcaption>Tom's user journey with Tempo.</figcaption>
+                </figure>
+
+                <h3>03. Final Outcome</h3>
+                <figure>
+                    <img src="img/tempo/tempo-onboard-v1_1x.png" alt="screenflow of Tempo's original onboarding">
+                    <figcaption>Original onboarding feature / lengthy and aimed at limiting users to PR-status only, with house-specific amenities as a secondary focus.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/tempo/tempo-onboarding_2x.png" alt="screenflow of Tempo's onboarding quiz">
+                    <figcaption>Final onboarding feature / framed as a quick quiz to kickstart house-seeking by recommending neighbourhoods based on lifestyle needs.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/tempo/tempo-explore_2x.png" alt="screenflow of exploring neighbourhoods in Tempo">
+                    <figcaption>Neighbourhood exploration / highlights key interest points in the area such as schools, grocery stores, and transit.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/tempo/tempo-compare_2x.png" alt="screenflow of comparing house listings in Tempo">
+                    <figcaption>Comparing rental listings / after finding suitable neighbourhoods, comparing home-specific features helps Tom find the best place to stay.</figcaption>
+                </figure>
+                
+                <p>In prototyping, I prioritized straightforward interactions that required less back-and-forth between screens to promote clarity in a space saturated with information. Here, I provided feedback and suggestions to various members of the team to bring these interactions to life.</p>
+                
+                <figure>
+                    <video controls>
+                        <source src="video/tempo.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Tempo app introduction video.</figcaption>
+                </figure>
+                
+                <p>We were praised by the teaching team on how streamlined Tempo's functionality appeared, and on the uniqueness of the neighbourhood exploration feature.</p>
+
+                <h3>04. Takeaways</h3>
+                <p>For my first academic interaction design project, there was definitely a steep learning curve, especially with the context my team and I chose to design for. I was also learning prototyping tools on the go.</p>
+
+                <p>I've also come to realize how much thought goes into designing information filtering for maps, and have a newfound appreciation for how seamless of an experience it can be.</p>
+            </div>
+        </div> 
+        <!--main content end-->
+        
+        <!--footer start-->
+        <footer class="box" id="social-links">
+            <!--linkedin icon | https://www.flaticon.com/free-icon/linkedin_1384088?term=linkedin&page=1&position=5-->
+            <a href="http://linkedin.com/in/becca-lu" target="_blank"><img src="img/linkedin-icon.png" alt="Rebecca's LinkedIn link"></a>
+            <!--instagram icon | https://www.flaticon.com/free-icon/instagram_733614-->
+            <a href="http://instagram.com/smolflowerbunk" target="_blank"><img src="img/ig-icon.png" alt="Rebecca's Instagram link"></a>
+        </footer>
+        <!--footer end-->
+    </body>
+</html>

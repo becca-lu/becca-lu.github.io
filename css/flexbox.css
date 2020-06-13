@@ -1,0 +1,293 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/* /////////////////////////////////////////////////////
+
+                    MAIN SITE LAYOUT
+
+///////////////////////////////////////////////////// */
+
+body {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+
+/* /////////////////////////////////////////////////////
+
+                HOMEPAGE PROJECT LAYOUT
+
+///////////////////////////////////////////////////// */
+
+.box:not([id]), .projects-card {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#projects {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-direction: column;
+	-ms-flex-direction: column;
+    flex-direction: column;
+    
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.projects-card {
+    align-items: center;
+    
+    left: 18vw;
+    height: 50vh;
+    width: 77vw;
+}
+
+.card-img {
+    flex: 1 1 40%;
+}
+
+.card-content {
+    flex: 2 1 60%;
+}
+
+.content-block {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.content-desc {
+    width: 70%;
+}
+
+.card-button {
+    width: 30%;
+}
+
+.box-content {
+    flex: 1 0 auto;
+    
+    left: 18vw;
+    width: 77vw;
+    height: 100vh;
+}
+
+/* /////////////////////////////////////////////////////
+
+        SIDEBAR + SOCIAL LINKS + LOGO ALIGNMENT
+
+///////////////////////////////////////////////////// */
+
+#sidebar {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-direction: column;
+	-ms-flex-direction: column;
+    flex-direction: column;
+    
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    
+    height: 100vh;
+    width: 18vw;
+}
+
+#social-links {
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+    
+    -webkit-flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    
+    right: 0vw;
+    width: 5vw;
+    height: 100vh;
+}
+
+
+
+/* /////////////////////////////////////////////////////
+
+                    MEDIA QUERIES
+
+///////////////////////////////////////////////////// */
+
+@media (max-width: 65em) {
+    body {
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+    
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .sidebar-content {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        
+        margin-top: 1em;
+        padding-bottom: 0;
+    }
+    
+    .sidebar-content a {
+        flex: 1 1 25%;
+        text-align: center;
+    }
+    
+    #projects {
+        height: auto;
+    }
+    
+    .projects-card {
+        left: 0;
+        width: 100vw;
+        height: auto;
+        padding: 2em;
+    }
+    
+    .box-content {
+        left: 0;
+        width: 100vw;
+        height: auto;
+        border-width: 0 2px 2px 2px;
+    }
+    
+    #social-links {
+        position: relative;
+        width: 100vw;
+        height: 10vh;
+        border: none;
+        
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    
+    #social-links img {
+        margin: 1em 2em;
+    }
+}
+
+@media (max-width: 54em) {
+    .projects-card, .box-content {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    .projects-card img, .box-content img {
+        width: 100%;
+    }
+    
+    .card-content {
+        margin: 1em 0 0 0;
+    }
+
+    .content-block {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        
+        margin: 0;
+    }
+
+    .content-desc {
+        width: 100%;
+        margin: 1em 0 2em 0;
+    }
+
+    .card-button {
+        width: 100%;
+    }
+    
+    h3 {
+        margin-left: 0;
+    }
+    
+    p {
+        margin: 1.5em 0;
+    }
+    
+    #img-afterthought {
+        margin: 0;
+        width: 100%;
+    }
+    
+    figcaption {
+        padding: 0;
+        font-size: 0.65em;
+    }
+}
+
+@media (max-width: 40em) {
+    #sidebar {
+        text-align: center;
+    }
+    
+    .sidebar-content a {
+        flex: 1 1 50%;
+        padding: 1.5em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 30em) {
+    .sidebar-content a {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    ::-webkit-scrollbar {
+    width: 0px;
+    }
+}
